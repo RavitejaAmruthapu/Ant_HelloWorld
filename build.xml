@@ -3,7 +3,7 @@
   <!-- Define the properties used by the Ant build -->
   <property name="app.name"      value="GoldenTech"/>
   <property name="app.version"   value="1.1"/>
-  <property name="tcserver.home" value="\tomcat" />
+  <property name="tcserver.home" value="E:\Devops\apache-tomcat-8.5.23" />
   <property name="work.home"    value="${basedir}/work"/>
   <property name="dist.home"     value="${basedir}/dist"/>
   <property name="src.home"      value="${basedir}/src"/>
@@ -53,8 +53,7 @@
 
   <target name="compile" depends="prepare"
           description="Compile Java sources and copy to WEB-INF/classes dir">
-    <javac srcdir="${src.home}"
-          destdir="${work.home}/WEB-INF/classes" includeantruntime="false">
+    <javac srcdir="${src.home}" destdir="${work.home}/WEB-INF/classes" includeantruntime="false">
        <classpath refid="compile.classpath"/>
     </javac>
     <copy  todir="${work.home}/WEB-INF/classes">
