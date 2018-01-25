@@ -23,7 +23,7 @@ public final class Hello extends HttpServlet {
      * @param response The servlet response we are producing
      *
      * @exception IOException if an input/output error occurs
-     * @exception ServletException if a servlet error occurs
+     * @exception ServletException if a servlet error occurs aaa
      */
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
