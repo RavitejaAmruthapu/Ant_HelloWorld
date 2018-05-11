@@ -18,6 +18,7 @@
     <echo>  clean   : Deletes work directories</echo>
     <echo>  compile : Compiles servlets into class files</echo>
     <echo>  dist    : Packages artifacts into a deployable WAR</echo>
+    <echo> ${basedir}>/echo>
     <echo></echo>
     <echo>For example, to clean, compile, and package all at once, run:</echo>
     <echo>prompt> ant all </echo>
